@@ -369,7 +369,7 @@ public class FloatingGroupExpandableListView extends ExpandableListView {
 			}
 		}
 
-		if(!mFloatingGroupEnabled) {
+		if(!mFloatingGroupEnabled || mAdapter.getChildrenCount(mFloatingGroupPosition) <= 0) {
 			return;
 		}
 
